@@ -1,0 +1,23 @@
+.header-container {
+    min-height: 500px;
+}
+
+.colored-section {
+    background-color: #180D35;
+    color: white;
+}
+
+.icon {
+    color: white;
+    padding: 0 5px;
+}
+
+.portfolio-text {
+    max-width: 50%;
+    font-weight: 1000;
+}
+
+.footer {
+    padding: 7px;
+    text-align: center;
+}
