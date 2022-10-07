@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
@@ -11,7 +10,7 @@ const ImageCarousel = () => {
             {SliderData.map((slide, index) => {
                 return (
                     <div key={index}>
-                        <img src={slide.image} />
+                        <img alt={`Slide ${index}`} src={slide.image} />
                     </div>
                 );
             })}
