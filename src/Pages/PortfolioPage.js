@@ -78,15 +78,14 @@ const PortfolioPage = () => {
                         </Typography>
                         <Typography variant='body2' gutterBottom>
                             I currently work as a Technical Support Engineer with Microsoft Azure, specializing in App Service Development and OSS support.
-                            This job is seldom easy - everyday I am thrust into new and unique environments which I must quickly learn to navigate and troubleshoot.
-                            However, this daily challenge allows me to constantly progress as a multi-faceted developer with a good sense for technology and people.
+                            While I am far from fond of this job, I am thankful for the learning opportunities that it provides.
                         </Typography>
                         <Typography variant='body2' gutterBottom>
-                            While development is my passion, I've also taught myself the basics of DevSecOps, to make up for my lack of a traditional college education. I am CompTIA Sec+ certified, and studying for my Network+ and Server+ certifications.
+                            Aside from development and cloud services, I also dabble in DevSecOps. I am CompTIA Sec+ certified, and studying for my Network+ and Server+ certifications.
                         </Typography>
                         <Typography variant='body2' gutterBottom>
-                            Outside of work and honing my development skills, I spend as much time as possible out in the mountains.
-                            Alpinism and mountaineering are my greatest passions, and I have climbed 45 14,000+ foot peaks in the last 2 years. I plan to summit all 72 14ers in the contiguous U.S
+                            Outside of work and learning, I spend as much time as possible out in the mountains.
+                            Alpinism and mountaineering are my greatest passions, and I have climbed 46 14,000+ foot peaks in the last 2 years. I plan to summit all 72 14ers in the contiguous U.S
                         </Typography>
                         <Typography variant='body2' gutterBottom>
                             I also write science-fiction and poetry.
@@ -94,7 +93,7 @@ const PortfolioPage = () => {
                         </Typography>
                         <Typography variant='body2' gutterBottom>
                             It can be difficult to balance all of these passions, but pushing through these challenges has forged me into a man that I can be proud of.
-                            I know that I can achieve whatever I set my mind to, and so I set my expectations to match.
+                            I know that I can achieve whatever I set my mind to, and I set my expectations of myself to match.
                         </Typography>
                     </Grid>
                     <Grid item md={4} pb={2} my='auto'>
