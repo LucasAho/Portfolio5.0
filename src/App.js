@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactPage from "./Pages/ContactPage";
 import PortfolioPage from "./Pages/PortfolioPage";
 import WorkInProgress from "./Pages/WorkInProgress";
 
@@ -8,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<PortfolioPage />} />
-          <Route path='/contact' element={<WorkInProgress />} />
+          <Route path='/contact' element={<ContactPage />} />
           <Route path='/blog/:postId' element={<WorkInProgress />} />
           <Route path='/wiki/:articleId' element={<WorkInProgress />} />
         </Routes>

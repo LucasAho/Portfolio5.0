@@ -15,6 +15,7 @@ import WikiCard from '../Components/WikiCards/WikiCard';
 import BlogCard from '../Components/BlogCards/BlogCard';
 import { JumboBlogCard } from '../Components/BlogCards/BlogCard';
 import ConLangImg from '../Common/images/doradren.jpg';
+import Footer from '../Components/Footer/Footer';
 
 const PortfolioPage = () => {
     const settings = {
@@ -69,7 +70,7 @@ const PortfolioPage = () => {
     return (
         <Box>
             <Container maxWidth='xl' className='header-container colored-section'>
-                <Typography mt={1} variant='h4' align='center'>Lucas Asher</Typography>
+                <Typography pt={1} variant='h4' align='center'>Lucas Asher</Typography>
                 <Typography variant='h6' align='center'>Author, mountaineer, and web developer</Typography>
                 <Grid container spacing={2} my={1}>
                     <Grid item md={8} my='auto'>
@@ -137,20 +138,7 @@ const PortfolioPage = () => {
                     </Grid>
                 </Grid>
             </Container>
-            <Container maxWidth='xl' my={1} className="footer colored-section">
-                <a href='https://www.instagram.com/lucas_asher_a/?hl=en'>
-                    <InstagramIcon className='icon' fontSize='large' />
-                </a>
-                <a href='https://github.com/LucasAho'>
-                    <GitHubIcon className='icon' fontSize='large' />
-                </a>
-                <a href='https://www.linkedin.com/in/lucas-asher-679569193/'>
-                    <LinkedInIcon className='icon' fontSize='large' />
-                </a>
-                <Link to='/contact'>
-                    <EmailIcon className='icon' fontSize='large' />
-                </Link>
-            </Container>
+            <Footer />
         </Box >
     );
 };
