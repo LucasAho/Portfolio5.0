@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Grid, TextField } from '@mui/material';
@@ -12,7 +8,6 @@ import { Link } from 'react-router-dom';
 import SendIcon from '@mui/icons-material/Send';
 import emailjs, { init } from 'emailjs-com';
 
-import { FormValidation } from '../Common/FormValidation';
 import Footer from '../Components/Footer/Footer';
 
 
@@ -58,12 +53,12 @@ export default function ContactPage() {
 
     return (
         <Box>
-            <Container maxWidth='xl' className='colored-section'>
+            <Container maxWidth='xl' className='colored-section AppBar'>
                 <Grid container alignItems='center'>
-                    <Grid item xs={6}>
+                    <Grid item my='auto' xs={6}>
                         <Typography variant='h4'>Contact</Typography>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item my='auto' xs={6}>
                         <Link to='/' style={{ color: '#FFF', textDecoration: "none" }}>Home</Link>
                     </Grid>
                 </Grid>
@@ -105,6 +100,10 @@ export default function ContactPage() {
                                 <Button type='submit' variant="contained" endIcon={<SendIcon />}>
                                     Send
                                 </Button>
+                                <Typography className={emailSent === true ? 'visible' : 'invisible'}>
+                                    Thank you for your message! I'll be in touch soon!
+                                    <Link to='/'>Return Home</Link>
+                                </Typography>
                             </Box>
                         </form>
                     </Grid>

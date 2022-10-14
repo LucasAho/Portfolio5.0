@@ -1,11 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import { Container, Typography, Grid, Box } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import './PortfolioPage.css';
 import { cardData } from '../Components/PortfolioCards/CardData';
@@ -20,7 +15,6 @@ import Footer from '../Components/Footer/Footer';
 const PortfolioPage = () => {
     const settings = {
         dots: true,
-        //adaptiveHeight: true,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
@@ -65,7 +59,7 @@ const PortfolioPage = () => {
     let renderCards = '';
     renderCards = cardData.map((card, i) => (
         <PortfolioCard key={i} data={card} />
-    ))
+    ));
 
     return (
         <Box>

@@ -8,6 +8,10 @@
 
 }
 
+.AppBar {
+    min-height: 10rem;
+}
+
 .icon {
     color: white;
     padding: 0 5px;
@@ -21,4 +25,8 @@
 .footer {
     padding: 7px;
     text-align: center;
+}
+
+.invisible {
+    display: none;
 }
