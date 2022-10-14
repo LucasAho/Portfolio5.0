@@ -66,46 +66,44 @@ export default function ContactPage() {
             <Container maxWidth='xl' mt={1} style={{ marginTop: '1rem', marginBottom: '1rem', backgroundColor: '#AFA8BA' }}>
                 <Grid container>
                     <Grid item sm={6}>
-                        <form onSubmit={submit}>
-                            <Box py={1}>
-                                <TextField
-                                    autoComplete='none'
-                                    fullWidth
-                                    label='Name'
-                                    value={name}
-                                    onChange={e => setName(e.target.value)}
-                                />
-                            </Box>
-                            <Box py={1}>
-                                <TextField
-                                    autoComplete='none'
-                                    fullWidth
-                                    label='Email'
-                                    value={email}
-                                    onChange={e => setEmail(e.target.value)}
-                                />
-                            </Box>
-                            <Box py={1}>
-                                <TextField
-                                    autoComplete='none'
-                                    fullWidth
-                                    label='Message'
-                                    value={message}
-                                    multiline
-                                    minRows={10}
-                                    onChange={e => setMessage(e.target.value)}
-                                />
-                            </Box>
-                            <Box py={1}>
-                                <Button type='submit' variant="contained" endIcon={<SendIcon />}>
-                                    Send
-                                </Button>
-                                <Typography className={emailSent === true ? 'visible' : 'invisible'}>
-                                    Thank you for your message! I'll be in touch soon!
-                                    <Link to='/'>Return Home</Link>
-                                </Typography>
-                            </Box>
-                        </form>
+                        <Box py={1}>
+                            <TextField
+                                autoComplete='none'
+                                fullWidth
+                                label='Name'
+                                value={name}
+                                onChange={e => setName(e.target.value)}
+                            />
+                        </Box>
+                        <Box py={1}>
+                            <TextField
+                                autoComplete='none'
+                                fullWidth
+                                label='Email'
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                            />
+                        </Box>
+                        <Box py={1}>
+                            <TextField
+                                autoComplete='none'
+                                fullWidth
+                                label='Message'
+                                value={message}
+                                multiline
+                                minRows={10}
+                                onChange={e => setMessage(e.target.value)}
+                            />
+                        </Box>
+                        <Box py={1}>
+                            <Button onClick={submit} variant="contained" endIcon={<SendIcon />}>
+                                Send
+                            </Button>
+                            <Typography className={emailSent === true ? 'visible' : 'invisible'}>
+                                Thank you for your message! I'll be in touch soon!
+                                <Link to='/'>Return Home</Link>
+                            </Typography>
+                        </Box>
                     </Grid>
                     <Grid item sm={6}>
                         <Typography>Thank you for contacting me! I will get back to you as soon as I am able.</Typography>
