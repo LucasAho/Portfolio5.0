@@ -35,7 +35,7 @@ const WikiArticlePage = () => {
                                     </Grid>
                                     <Grid item md={6}>
                                         {!articleDetails.image ? null : (
-                                            <img src={articleDetails.image} />
+                                            <img src={articleDetails.image} alt={`${articleDetails.title} image` />
                                         )}
                                     </Grid>
                                 </Grid>
