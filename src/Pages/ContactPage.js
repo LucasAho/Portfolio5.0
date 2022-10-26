@@ -9,6 +9,7 @@ import SendIcon from '@mui/icons-material/Send';
 import emailjs, { init } from 'emailjs-com';
 
 import Footer from '../Components/Footer/Footer';
+import AppBar from '../Components/AppBar/AppBar';
 
 
 
@@ -53,16 +54,7 @@ export default function ContactPage() {
 
     return (
         <Box>
-            <Container maxWidth='xl' className='colored-section AppBar'>
-                <Grid container alignItems='center'>
-                    <Grid item my='auto' xs={6}>
-                        <Typography variant='h4'>Contact</Typography>
-                    </Grid>
-                    <Grid item my='auto' xs={6}>
-                        <Link to='/' style={{ color: '#FFF', textDecoration: "none" }}>Home</Link>
-                    </Grid>
-                </Grid>
-            </Container>
+            <AppBar currentPage='Contact' />
             <Container maxWidth='xl' mt={1} style={{ marginTop: '1rem', marginBottom: '1rem', backgroundColor: '#AFA8BA' }}>
                 <Grid container>
                     <Grid item sm={6}>
@@ -99,10 +91,12 @@ export default function ContactPage() {
                             <Button onClick={submit} variant="contained" endIcon={<SendIcon />}>
                                 Send
                             </Button>
-                            <Typography className={emailSent === true ? 'visible' : 'invisible'}>
-                                Thank you for your message! I'll be in touch soon!
+                            <Box className={emailSent === true ? 'visible' : 'invisible'}>
+                                <Typography variant='body1'>
+                                    Thank you for your message! I'll be in touch soon!
+                                </Typography>
                                 <Link to='/'>Return Home</Link>
-                            </Typography>
+                            </Box>
                         </Box>
                     </Grid>
                     <Grid item sm={6}>

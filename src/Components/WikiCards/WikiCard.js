@@ -12,7 +12,7 @@ const WikiCard = ({ source }) => {
     return (
         <Container>
             <Card>
-                <CardActionArea component={RouterLink} to='/wiki/1'>
+                <CardActionArea component={RouterLink} to='/wiki/6359974af12a0ebeb89670d8'>
                     <CardMedia
                         component="img"
                         height="50%"

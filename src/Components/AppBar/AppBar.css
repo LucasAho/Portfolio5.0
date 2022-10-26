@@ -1,0 +1,10 @@
+.AppBar {
+    min-height: 10rem;
+    background-color: #180D35;
+    color: white;
+    align-content: center;
+}
+
+.nav-links {
+    justify-content: space-between;
+}
