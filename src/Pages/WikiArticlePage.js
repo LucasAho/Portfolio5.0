@@ -34,9 +34,10 @@ const WikiArticlePage = () => {
                                         <Typography variant='caption'>{articleDetails.blurb}</Typography>
                                     </Grid>
                                     <Grid item md={6}>
-                                        {!articleDetails.image ? null : (
-                                            <img src={articleDetails.image} alt={`${articleDetails.title} image`} />
-                                        )}
+                                        Image
+                                        {/* {!articleDetails.image ? null : (
+                                            <img src={articleDetails.image} alt={articleDetails.title} />
+                                        )} */}
                                     </Grid>
                                 </Grid>
 
