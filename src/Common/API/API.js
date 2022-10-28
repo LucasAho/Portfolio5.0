@@ -7,6 +7,7 @@ const API = {
         return axios.get(`${url}/blog/`);
     },
     fetchById: function (id) {
+        console.log(`${url}/blog/${id}`)
         return axios.get(`${url}/blog/${id}`);
     }
 }

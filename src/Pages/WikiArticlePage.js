@@ -14,10 +14,10 @@ const WikiArticlePage = () => {
     useEffect(() => {
         API.fetchById(articleId)
             .then(res => {
-                setArticleDetails(res.data)
+                setArticleDetails(res.data);
             })
             .catch(err => console.log(err));
-    }, [articleId])
+    }, [articleId]);
 
     return (
         <div>
@@ -25,8 +25,8 @@ const WikiArticlePage = () => {
             <Container maxWidth='xl' mt={1} style={{ marginTop: '1rem', marginBottom: '1rem', backgroundColor: '#AFA8BA' }}>
                 <Grid container>
 
-                    <Grid item md={9}>
-                        {!articleDetails ? null : (
+                    <Grid item md={9} pb={2}>
+                        {articleDetails === undefined ? null : (
                             <div>
                                 <Grid container>
                                     <Grid item md={6}>
@@ -40,10 +40,23 @@ const WikiArticlePage = () => {
                                         )} */}
                                     </Grid>
                                 </Grid>
-
-                                {articleDetails.paragraphs.map(p => {
-                                    return <Typography>{p}</Typography>
+                                {articleDetails.paragraphs.map((section, i) => {
+                                    console.log(section.Content)
+                                    // if (p.split(' ').length === p.length) return <Typography variant='h6'>{p}</Typography
+                                    return (
+                                        <div index={i}>
+                                            <Typography my={1} variant='h4'>{section.Title}</Typography>
+                                            {
+                                                section.Content.map(p => {
+                                                    return (
+                                                        <Typography pb={1} varitant='body1'>{p}</Typography>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    )
                                 })}
+
                             </div>
                         )}
                     </Grid>
@@ -51,7 +64,7 @@ const WikiArticlePage = () => {
                         <SideBar />
                     </Grid>
                 </Grid>
-            </Container>
+            </Container >
             <Footer />
         </div >
     );
