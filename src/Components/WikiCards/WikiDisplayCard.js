@@ -1,4 +1,5 @@
 import React from 'react';
+import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -8,11 +9,11 @@ import { CardActionArea, Container } from '@mui/material';
 
 
 
-const WikiCard = ({ source }) => {
+const WikiDisplayCard = () => {
     return (
         <Container>
             <Card>
-                <CardActionArea component={RouterLink} to={`/wiki/${source.id}`} >
+                <CardActionArea component={RouterLink} to='/wiki/6359974af12a0ebeb89670d8'>
                     <CardMedia
                         component="img"
                         height="50%"
@@ -29,8 +30,8 @@ const WikiCard = ({ source }) => {
                     </CardContent>
                 </CardActionArea>
             </Card>
-        </Container >
+        </Container>
     );
 };
 
-export default WikiCard;
+export default WikiDisplayCard;

@@ -15,11 +15,11 @@ const AppBar = (props) => {
                             <Typography variant='h3'>{props.currentPage}</Typography>
                         </Container>
                     </Grid>
-                    <Grid item xs={6} direction='row' className='nav-links'>
+                    <Grid item xs={6} direction='row' my='auto' className='nav-links'>
                         <Container className='nav-links'>
-                            <Link to='/' style={{ color: '#FFF', textDecoration: "none" }}>Portfolio</Link>
-                            <Link to='/wiki' style={{ color: '#FFF', textDecoration: "none" }}>Wiki</Link>
-                            <Link to='/blog' style={{ color: '#FFF', textDecoration: "none" }}>Blog</Link>
+                            <Link to='/' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Portfolio</Link>
+                            <Link to='/wiki' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Wiki</Link>
+                            <Link to='/blog' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Blog</Link>
                         </Container>
                     </Grid>
                 </Grid>

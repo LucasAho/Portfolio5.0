@@ -1,0 +1,19 @@
+.bleft {
+    border-left: 2px solid black;
+    padding: 0px;
+}
+
+.bbottom {
+    border-bottom: 2px solid black;
+    padding: 0px;
+}
+
+.btop {
+    border-top: 2px solid black;
+    padding: 0px;
+}
+
+.bright {
+    border-right: 2px solid black;
+    padding: 0px;
+}

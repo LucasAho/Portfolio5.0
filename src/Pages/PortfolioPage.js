@@ -80,7 +80,7 @@ const PortfolioPage = () => {
                         </Typography>
                         <Typography variant='body2' gutterBottom>
                             Outside of work and learning, I spend as much time as possible out in the mountains.
-                            Alpinism and mountaineering are my greatest passions, and I have climbed 46 14,000+ foot peaks in the last 2 years. I plan to summit all 72 14ers in the contiguous U.S
+                            Alpinism and mountaineering are my greatest passions, and I have climbed 50 14,000+ foot peaks in the last 2 years. I plan to summit all 72 14ers in the contiguous U.S
                         </Typography>
                         <Typography variant='body2' gutterBottom>
                             I also write science-fiction and poetry.
@@ -109,12 +109,14 @@ const PortfolioPage = () => {
                 <Grid container pb={3}>
                     <Grid item py={1} sm={6}><WikiCard source={{
                         img: ConLangImg,
+                        id: '635c4b070dd640ebbbf39bde',
                         title: "ConLang How To",
                         blurb: "Detailed information on the constructed language, Tukren"
                     }} /></Grid>
                     <Grid item py={1} sm={6}><WikiCard source={{
                         img: 'https://i.imgur.com/r837OdL.png',
-                        title: "WorldBuilding Wiki",
+                        title: "Concerning Hīren",
+                        id: "6359974af12a0ebeb89670d8",
                         blurb: 'Facts and Psuedo-history from the world of Maalima'
                     }} /></Grid>
                 </Grid>

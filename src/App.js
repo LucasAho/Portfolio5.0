@@ -5,6 +5,7 @@ import WorkInProgress from "./Pages/WorkInProgress";
 import WikiArticlePage from "./Pages/WikiArticlePage";
 import WikiHomePage from "./Pages/WikiHomePage";
 import PNF from "./Pages/PNF";
+import VoiceOfStone from "./Components/Tukren/VoiceOfStone";
 
 
 function App() {

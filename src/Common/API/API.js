@@ -7,8 +7,10 @@ const API = {
         return axios.get(`${url}/blog/`);
     },
     fetchById: function (id) {
-        console.log(`${url}/blog/${id}`)
         return axios.get(`${url}/blog/${id}`);
+    },
+    fetchWikiMenu: function () {
+        return axios.get(`${url}/blog/byGenre/World%20Building`);
     }
 }
 

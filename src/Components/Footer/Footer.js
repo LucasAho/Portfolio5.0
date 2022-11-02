@@ -9,7 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
     return (
         <Container maxWidth='xl' className="footer colored-section">
-            <Box pt={3} my='auto'>
+            <Box my='auto'>
                 <a href='https://www.instagram.com/lucas_asher_a/?hl=en'>
                     <InstagramIcon className='icon' fontSize='large' />
                 </a>
