@@ -13,12 +13,12 @@ export default function DictionaryDisplay({ word }) {
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <CardContent sx={{ flex: '1 0 auto' }}>
                     <Grid container mx='auto' mb={2} spacing={2}>
-                        <Grid item ml={-1} xs={6}>
+                        <Grid item ml={-1} md={6}>
                             <Typography component="div" variant="h5">
                                 {word.conlang}
                             </Typography>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item md={6}>
                             <Typography component="div" color="text.secondary" variant="subtitle1">
                                 ({word.pronounciation})
                             </Typography>
