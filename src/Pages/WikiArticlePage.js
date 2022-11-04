@@ -70,7 +70,7 @@ const WikiArticlePage = () => {
                         )}
                     </Grid >
                     <Grid item md={3}>
-                        <SideBar articleId={articleId} />
+                        <SideBar articleId={articleId} wiki />
                     </Grid>
                 </Grid >
             </Container >
