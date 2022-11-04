@@ -252,10 +252,10 @@ export default function DictionaryTable({ dictionary }) {
                                             padding="none">
                                             {word.conlang}
                                         </TableCell>
-                                        <TableCell style={{ width: 360 }} align="left">
+                                        <TableCell align="left">
                                             {word.english}
                                         </TableCell>
-                                        <TableCell style={{ width: 160 }} align="center">
+                                        <TableCell align="left">
                                             {word.pos}
                                         </TableCell>
                                     </TableRow>
