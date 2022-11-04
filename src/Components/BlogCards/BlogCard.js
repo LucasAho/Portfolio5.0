@@ -30,22 +30,23 @@ const BlogCard = () => {
     );
 };
 
-export const JumboBlogCard = () => {
+export const JumboBlogCard = ({ content }) => {
     return (
         <Container >
             <Card>
-                <CardActionArea component={RouterLink} to='/blog/1'>
+                <CardActionArea component={RouterLink} to={`/blog/${content._id}`}>
                     <CardMedia
                         component="img"
                         height="400"
                         alt="Blog Post"
+                        image={content.image}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Blog Post
+                            {content.title}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Blurb
+                            {content.blurb}
                         </Typography>
                     </CardContent>
                 </CardActionArea>

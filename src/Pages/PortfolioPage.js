@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { Container, Typography, Grid, Box } from '@mui/material';
 
@@ -11,8 +11,17 @@ import BlogCard from '../Components/BlogCards/BlogCard';
 import { JumboBlogCard } from '../Components/BlogCards/BlogCard';
 import ConLangImg from '../Common/images/doradren.jpg';
 import Footer from '../Components/Footer/Footer';
+import API from '../Common/API/API';
 
 const PortfolioPage = () => {
+    const [blogTitles, setBlogTitles] = useState();
+    useEffect(() => {
+        API.fetchBlogMenu()
+            .then(res => {
+                setBlogTitles(res.data);
+            })
+            .catch(err => console.log(err));
+    }, []);
     const settings = {
         dots: true,
         infinite: true,
@@ -126,7 +135,9 @@ const PortfolioPage = () => {
                 <Typography pb={1} variant='body1' align='center'>A collection of short stories, poetry, and personal essays</Typography>
                 <Grid container>
                     <Grid item xs={12} md={6}>
-                        <JumboBlogCard />
+                        {blogTitles &&
+                            <JumboBlogCard content={blogTitles[blogTitles.length - 1]} />
+                        }
                     </Grid>
                     <Grid item md={6}>
                         <BlogCard />

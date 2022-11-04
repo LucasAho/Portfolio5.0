@@ -19,7 +19,6 @@ const BlogArticlePage = () => {
             })
             .catch(err => console.log(err));
     }, [postId]);
-    console.log(postDetails)
     return (
         <div>
             <AppBar currentPage='Blog' />
@@ -44,7 +43,7 @@ const BlogArticlePage = () => {
                                     </Grid>
                                     {postDetails.paragraphs.map((section, i) => {
                                         return (
-                                            <div index={i}>
+                                            <div key={i}>
                                                 <Typography my={1} variant='h4'>{section.Title}</Typography>
                                                 {
                                                     section.Content.map(p => {
