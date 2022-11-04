@@ -21,11 +21,11 @@ const SideBar = ({ articleId }) => {
         <div>
             <nav aria-label="main mailbox folders">
                 <List>
-                    {WikiTitles && WikiTitles.map(article => {
+                    {WikiTitles && WikiTitles.map((article, index) => {
                         return (
                             <div>
                                 {article._id !== articleId ? (
-                                    <ListItem disablePadding>
+                                    <ListItem key={index} disablePadding>
                                         <ListItemButton component={Link} to={`/wiki/${article._id}`} >
                                             <ListItemText primary={article.title} />
                                         </ListItemButton>

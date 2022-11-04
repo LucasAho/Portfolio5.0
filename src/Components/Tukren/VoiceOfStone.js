@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 
 import PhonemeTables from './PhonemeTables';
 import ArticleTable from './ArticleTable';
 import PronounTable from './PronounTable';
 import VerbTense from './VerbTense';
+import DictionaryTable from './DictionaryTable';
+import API from '../../Common/API/API';
 
 const VoiceOfStone = () => {
+    const [dictionary, setDictionary] = useState();
+
+    useEffect(() => {
+        API.fetchTukrenWords()
+            .then(res => {
+                setDictionary(res.data);
+            })
+            .catch(err => console.log(err));
+    }, []);
     return (
         <div>
             <Typography align='center' variant='h3'>Voice of Stone - a Guide on Proto-Tukren</Typography>
@@ -204,6 +215,10 @@ const VoiceOfStone = () => {
                 <Typography my={1} variant='h5'>Verb Morphology</Typography>
                 <Typography variant='h6'>Verb Tense</Typography>
                 <VerbTense />
+            </Container>
+            <Container className='tukren-dictionary' style={{ marginTop: '2rem' }}>
+                {dictionary && (
+                    <DictionaryTable dictionary={dictionary} />)}
             </Container>
         </div >
     );

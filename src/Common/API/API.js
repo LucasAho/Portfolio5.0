@@ -11,6 +11,9 @@ const API = {
     },
     fetchWikiMenu: function () {
         return axios.get(`${url}/blog/byGenre/World%20Building`);
+    },
+    fetchTukrenWords: function () {
+        return axios.get(`${url}/tukren`);
     }
 }
 
