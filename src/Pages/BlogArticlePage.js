@@ -33,18 +33,27 @@ const BlogArticlePage = () => {
                                     <Grid container>
                                         <Grid item md={6}>
                                             <Typography variant='h3'>{postDetails.title}</Typography>
-                                            <Typography variant='caption'>{postDetails.blurb}</Typography>
+                                            <Typography variant='subtitle1'>{postDetails.blurb}</Typography>
+
+                                            <Typography mr={3} align='left' variant='caption'>Written: {postDetails.dateWritten}</Typography>
+
+                                            <Typography ml={3} align='right' variant='caption'>{postDetails.genre}</Typography>
+
                                         </Grid>
                                         <Grid item md={6}>
                                             {!postDetails.image ? null : (
                                                 <img src={postDetails.image} width={300} alt={postDetails.title} />
                                             )}
                                         </Grid>
+
                                     </Grid>
                                     {postDetails.paragraphs.map((section, i) => {
                                         return (
                                             <div key={i}>
-                                                <Typography my={1} variant='h4'>{section.Title}</Typography>
+                                                {section.Title !== '-' ?
+                                                    <Typography my={1} variant='h4'>{section.Title}</Typography>
+                                                    : <br />
+                                                }
                                                 {
                                                     section.Content.map(p => {
                                                         return (

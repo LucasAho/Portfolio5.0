@@ -216,6 +216,24 @@ const VoiceOfStone = () => {
                     <Typography my={1} variant='h5'>Verb Morphology</Typography>
                     <Typography variant='h6'>Verb Tense</Typography>
                     <VerbTense />
+                    <Typography mt={1} variant='h6'>Examples</Typography>
+                    <Grid mb={1} container>
+                        <Grid item sm={4}>
+                            <Typography variant='body1'><strong>Recent Past Perfective</strong></Typography>
+                            <Typography variant='body1'>The smith forged a farming implement.</Typography>
+                            <Typography variant='body1'>Di'naketel sau'sokutz keten sahil</Typography>
+                        </Grid>
+                        <Grid item sm={4}>
+                            <Typography variant='body1'><strong>Future Imperfective</strong></Typography>
+                            <Typography variant='body1'>The smith will be forging a farming implement</Typography>
+                            <Typography variant='body1'>Di'naketel sau'sokutz keten nabi</Typography>
+                        </Grid>
+                        <Grid item sm={4}>
+                            <Typography variant='body1'><strong>Colony Past Habitual</strong></Typography>
+                            <Typography variant='body1'>The smiths have long since forged farming implements</Typography>
+                            <Typography variant='body1'>Di'ronaketel sau'rosokutz keten noduk</Typography>
+                        </Grid>
+                    </Grid>
                 </Container>
                 <Container className='tukren-dictionary' style={{ marginTop: '2rem' }}>
                     {dictionary && (

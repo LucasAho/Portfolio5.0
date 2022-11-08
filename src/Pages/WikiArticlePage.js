@@ -41,18 +41,17 @@ const WikiArticlePage = () => {
                                         <Grid container>
                                             <Grid item md={6}>
                                                 <Typography variant='h3'>{articleDetails.title}</Typography>
-                                                <Typography variant='caption'>{articleDetails.blurb}</Typography>
+                                                <Typography variant='subtitle1'>{articleDetails.blurb}</Typography>
                                             </Grid>
                                             <Grid item md={6}>
-                                                Image
-                                                {/* {!articleDetails.image ? null : (
-                                            <img src={articleDetails.image} alt={articleDetails.title} />
-                                        )} */}
+                                                {!articleDetails.image ? null : (
+                                                    <img src={articleDetails.image} width={300} alt={articleDetails.title} />
+                                                )}
                                             </Grid>
                                         </Grid>
                                         {articleDetails.paragraphs.map((section, i) => {
                                             return (
-                                                <div index={i}>
+                                                <div key={i}>
                                                     <Typography my={1} variant='h4'>{section.Title}</Typography>
                                                     {
                                                         section.Content.map(p => {

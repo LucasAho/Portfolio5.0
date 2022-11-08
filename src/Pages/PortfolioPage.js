@@ -133,18 +133,20 @@ const PortfolioPage = () => {
             <Container maxWidth='xl' my={1}>
                 <Typography pt={1} variant='h4' align='center'>Blog</Typography>
                 <Typography pb={1} variant='body1' align='center'>A collection of short stories, poetry, and personal essays</Typography>
-                <Grid container>
-                    <Grid item xs={12} md={6}>
-                        {blogTitles &&
-                            <JumboBlogCard content={blogTitles[blogTitles.length - 1]} />
-                        }
+                {blogTitles &&
+                    <Grid container>
+                        <Grid item xs={12} md={6}>
+                            {blogTitles &&
+                                <JumboBlogCard content={blogTitles[blogTitles.length - 1]} />
+                            }
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <BlogCard content={blogTitles[blogTitles.length - 2]} />
+                            <BlogCard content={blogTitles[blogTitles.length - 3]} my={1} />
+                        </Grid>
                     </Grid>
-                    <Grid item md={6}>
-                        <BlogCard />
-                        <BlogCard />
-                    </Grid>
-                </Grid>
-            </Container>
+                }
+            </Container >
             <Footer />
         </Box >
     );

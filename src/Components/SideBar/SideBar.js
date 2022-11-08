@@ -61,7 +61,7 @@ const BlogPage = ({ articleId }) => {
                             <div>
                                 {article._id !== articleId ? (
                                     <ListItem key={index} disablePadding>
-                                        <ListItemButton component={Link} to={`/wiki/${article._id}`} >
+                                        <ListItemButton component={Link} to={`/blog/${article._id}`} >
                                             <ListItemText primary={article.title} />
                                         </ListItemButton>
                                     </ListItem>) : null}
