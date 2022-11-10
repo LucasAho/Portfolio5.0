@@ -7,7 +7,6 @@ import WikiHomePage from "./Pages/WikiHomePage";
 import PNF from "./Pages/PNF";
 import { Box, ThemeProvider } from "@mui/material";
 import Theme from "./Common/theme/Theme";
-import Planets from "./Components/Planets/Planets";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
             <Route path='/blog/:postId' element={<BlogArticlePage />} />
             <Route path='/wiki/:articleId' element={<WikiArticlePage />} />
             <Route exact path='/wiki' element={<WikiHomePage />} />
-            <Route exact path='/wiki/planets' element={<Planets />} />
             <Route path='*' element={<PNF />} />
           </Routes>
         </Router>

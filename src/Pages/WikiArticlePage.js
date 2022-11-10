@@ -7,32 +7,33 @@ import AppBar from '../Components/AppBar/AppBar';
 import Footer from '../Components/Footer/Footer';
 import SideBar from '../Components/SideBar/SideBar';
 import VoiceOfStone from '../Components/Tukren/VoiceOfStone';
+import Planets from '../Components/Planets/Planets';
 
 
 const WikiArticlePage = () => {
     const { articleId } = useParams();
     const [articleDetails, setArticleDetails] = useState();
     useEffect(() => {
-        if (articleId !== '635c4b070dd640ebbbf39bde') {
+        if (articleId === '635c4b070dd640ebbbf39bde') {
+            setArticleDetails('Tukren');
+        } else if (articleId === '636d20e96c3b1d6f8a6aa949') {
+            setArticleDetails('Planets');
+        } else {
             API.fetchById(articleId)
                 .then(res => {
                     setArticleDetails(res.data);
                 })
                 .catch(err => console.log(err));
-        } else {
-            setArticleDetails('Tukren');
         }
     }, [articleId]);
-
+    console.log(articleDetails)
     return (
         <div>
             <AppBar currentPage='Wiki' />
             <Container maxWidth='xl' mt={1} style={{ marginTop: '1rem', marginBottom: '1rem' }}>
                 <Grid container>
                     <Grid item md={9} pb={2}>
-                        {articleDetails === 'Tukren' ? (
-                            <VoiceOfStone />
-                        ) : (
+                        {articleDetails !== 'Tukren' && articleDetails !== 'Planets' ? (
                             <div>
                                 {articleDetails === undefined ? (
                                     null
@@ -66,6 +67,15 @@ const WikiArticlePage = () => {
                                     </div>
                                 )}
                             </div>
+                        ) : (
+                            <>
+                                {articleDetails === 'Planets' && (
+                                    <Planets />
+                                )}
+                                {articleDetails === 'Tukren' && (
+                                    <VoiceOfStone />
+                                )}
+                            </>
                         )}
                     </Grid >
                     <Grid item md={3}>
