@@ -8,7 +8,7 @@ import './AppBar.css';
 const AppBar = (props) => {
     return (
         <div>
-            <Container maxWidth='xl' style={{ padding: 0 }}>
+            <Container maxWidth='xl'>
                 <Grid className='AppBar' container>
                     <Grid pl={3} item xs={6}>
                         <Container>
