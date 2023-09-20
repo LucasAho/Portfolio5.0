@@ -4,6 +4,7 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import BlogArticlePage from "./Pages/BlogArticlePage";
 import WikiArticlePage from "./Pages/WikiArticlePage";
 import WikiHomePage from "./Pages/WikiHomePage";
+import SneffelsTripReport from "./Pages/SneffelsTripReport";
 import PNF from "./Pages/PNF";
 import { Box, ThemeProvider } from "@mui/material";
 import Theme from "./Common/theme/Theme";
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/' element={<PortfolioPage />} />
             <Route path='/contact' element={<ContactPage />} />
             <Route path='/blog/:postId' element={<BlogArticlePage />} />
+            <Route path='/tripReport/Sneffels092023' element={<SneffelsTripReport />} />
             <Route path='/wiki/:articleId' element={<WikiArticlePage />} />
             <Route exact path='/wiki' element={<WikiHomePage />} />
             <Route path='*' element={<PNF />} />
