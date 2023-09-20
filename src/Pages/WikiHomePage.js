@@ -12,7 +12,6 @@ import Typography from '@mui/material/Typography';
 
 import API from '../Common/API/API';
 import CustomAppBar from '../Components/AppBar/AppBar';
-import SideBar from '../Components/SideBar/SideBar';
 import Footer from '../Components/Footer/Footer';
 
 const WikiHomePage = () => {

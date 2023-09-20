@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 
-import API from '../Common/API/API';
 import AppBar from '../Components/AppBar/AppBar';
 import Footer from '../Components/Footer/Footer';
-import SideBar from '../Components/SideBar/SideBar';
 
 
-const WikiArticlePage = () => {
+const SneffelsTripReport = () => {
     return (
         <div>
             <AppBar currentPage='Trip Report' />
@@ -100,4 +97,4 @@ const WikiArticlePage = () => {
     );
 };
 
-export default WikiArticlePage;
+export default SneffelsTripReport;
