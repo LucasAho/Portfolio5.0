@@ -19,7 +19,7 @@ const SplitTripReport = () => {
                                 <Typography mr={3} align='left' variant='caption'>Climbed November 25th, 2023</Typography>
                             </Grid>
                             <Grid item md={6} sm={12}>
-                                <img src="https://i.imgur.com/Jah7m7V.jpg" maxWidth={400} alt="Split's East Face" />
+                                <img src="https://i.imgur.com/Jah7m7V.jpg" width={400} alt="Split's East Face" />
                             </Grid>
                         </Grid>
                     </Container>
@@ -81,7 +81,7 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item md={5} sm={12}>
-                                        <img src="https://i.imgur.com/AwV4kC6.jpg" maxWidth={400} alt="Appraoch Hike" />
+                                        <img src="https://i.imgur.com/AwV4kC6.jpg" width={400} alt="Approach Hike" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
                                         <Typography variant='body'>And nine hours later, we were starting from the trailhead at 6,600', at the edge of the desert.
@@ -114,7 +114,7 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} md={5} sm={12}>
-                                        <img src="https://i.imgur.com/Vq2biuD.jpg" maxWidth={400} alt="Ellen Beneath P1" />
+                                        <img src="https://i.imgur.com/Vq2biuD.jpg" width={400} alt="Ellen Beneath P1" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
                                         <Typography variant='body'>
@@ -138,7 +138,7 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} sm={12} md={6}>
-                                        <img src="https://i.imgur.com/bNN4Re7.jpg" maxWidth={500} alt="Fork in the Road" />
+                                        <img src="https://i.imgur.com/bNN4Re7.jpg" width={500} alt="Fork in the Road" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
                                         <Typography variant='body'>
@@ -164,7 +164,7 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} md={5} sm={12}>
-                                        <img src="https://i.imgur.com/xrhtqa7.jpg" maxWidth={350} alt="Ellen on Mixed" />
+                                        <img src="https://i.imgur.com/xrhtqa7.jpg" width={350} alt="Ellen on Mixed" />
                                     </Grid>
                                     <Grid item md={7}>
                                         <Typography variant='body'>
@@ -195,7 +195,7 @@ const SplitTripReport = () => {
                                         </Typography>
                                     </Grid>
                                     <Grid item md={5} sm={12}>
-                                        <img src="https://i.imgur.com/jKrWKOD.jpg" maxWidth={300} alt="Sketchy Pieces" />
+                                        <img src="https://i.imgur.com/jKrWKOD.jpg" width={300} alt="Sketchy Pieces" />
                                     </Grid>
                                 </Grid>
                             </Container>
