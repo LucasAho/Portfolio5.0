@@ -13,7 +13,7 @@ const SplitTripReport = () => {
                 <div>
                     <Container>
                         <Grid container maxWidth='xl' px='auto' mx='auto'>
-                            <Grid item md={4}>
+                            <Grid item md={4} sm={12}>
                                 <Typography variant='h3'>Split Couloir</Typography>
                                 <Typography variant='subtitle1'>Attempting a classic</Typography>
                                 <Typography mr={3} align='left' variant='caption'>Climbed November 25th, 2023</Typography>
@@ -73,14 +73,14 @@ const SplitTripReport = () => {
                                             Regardless, by 05:30, our woes were forgotten, and we were soaring over the clouds.
                                         </Typography>
                                     </Grid>
-                                    <Grid item md={5}>
+                                    <Grid item md={5} sm={12}>
                                         <img src="https://i.imgur.com/4eFHDmi.jpg" height={300} alt="Flying to LAX" />
                                     </Grid>
                                 </Grid>
                             </Container>
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
-                                    <Grid item md={5}>
+                                    <Grid item md={5} sm={12}>
                                         <img src="https://i.imgur.com/AwV4kC6.jpg" maxWidth={400} alt="Appraoch Hike" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
@@ -106,14 +106,14 @@ const SplitTripReport = () => {
                                             We anchored up on the side, and she set off, wielding a Petzl Gully in one hand and a BD Fuel in the other.
                                         </Typography>
                                     </Grid>
-                                    <Grid item md={5}>
+                                    <Grid item md={5} sm={12}>
                                         <img src="https://i.imgur.com/Bx9pO6b.jpg" height={300} alt="Split Glacier" />
                                     </Grid>
                                 </Grid>
                             </Container>
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
-                                    <Grid item mt={1} md={5}>
+                                    <Grid item mt={1} md={5} sm={12}>
                                         <img src="https://i.imgur.com/Vq2biuD.jpg" maxWidth={400} alt="Ellen Beneath P1" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
@@ -137,7 +137,7 @@ const SplitTripReport = () => {
                             </Typography>
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
-                                    <Grid item mt={1} sm={12} md={6} sm={12}>
+                                    <Grid item mt={1} sm={12} md={6}>
                                         <img src="https://i.imgur.com/bNN4Re7.jpg" maxWidth={500} alt="Fork in the Road" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
@@ -163,7 +163,7 @@ const SplitTripReport = () => {
                             </Typography>
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
-                                    <Grid item mt={1} md={5}>
+                                    <Grid item mt={1} md={5} sm={12}>
                                         <img src="https://i.imgur.com/xrhtqa7.jpg" maxWidth={350} alt="Ellen on Mixed" />
                                     </Grid>
                                     <Grid item md={7}>
@@ -194,7 +194,7 @@ const SplitTripReport = () => {
                                             They say that the greatest alpinists have the shortest memories, and this is a moment that I would do well to expunge from my mind. As I hung there, I wondered if my two pieces would pop out, and I'd be sent cartwheeling to my death. I wondered if Ellen's rappel would pop, and I'd watch her tumble past me, leaving me to freeze to death on the side of a cliff. That kind of thinking is actively detrimental to my chances of survival, but at that point, fatigue had reduced me to a cold meat bag of anxiety, and I had nothing to do but wait. Only by further exposure to those situations can I harden myself against such a mindset.
                                         </Typography>
                                     </Grid>
-                                    <Grid item md={5}>
+                                    <Grid item md={5} sm={12}>
                                         <img src="https://i.imgur.com/jKrWKOD.jpg" maxWidth={300} alt="Sketchy Pieces" />
                                     </Grid>
                                 </Grid>
