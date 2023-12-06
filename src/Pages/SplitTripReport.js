@@ -19,7 +19,7 @@ const SplitTripReport = () => {
                                 <Typography mr={3} align='left' variant='caption'>Climbed November 25th, 2023</Typography>
                             </Grid>
                             <Grid item md={6} sm={12}>
-                                <img src="https://i.imgur.com/Jah7m7V.jpg" max-width={400} alt="Split's East Face" />
+                                <img src="https://i.imgur.com/Jah7m7V.jpg" width={400} alt="Split's East Face" />
                             </Grid>
                         </Grid>
                     </Container>
@@ -80,10 +80,10 @@ const SplitTripReport = () => {
                             </Container>
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
-                                    <Grid item md={5} sm={12}>
-                                        <img src="https://i.imgur.com/AwV4kC6.jpg" width={400} alt="Approach Hike" />
+                                    <Grid item md={5} sm={12} >
+                                        <img src="https://i.imgur.com/AwV4kC6.jpg" style={{ maxWidth: '100%' }} alt="Approach Hike" />
                                     </Grid>
-                                    <Grid item md={6} sm={12}>
+                                    <Grid item md={7} sm={12} pl={2}>
                                         <Typography variant='body'>And nine hours later, we were starting from the trailhead at 6,600', at the edge of the desert.
                                             <br />
                                             The trail wove over the bush, up running creeks, and through tangles of trees, but we made good time. Even 6 months prior, such an approach in heavy packs would have done me in, but I felt fresh by the time we reached our basecamp at 10,200'. A gratifying sign that my Denali training was paying off.
@@ -114,9 +114,9 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} md={5} sm={12}>
-                                        <img src="https://i.imgur.com/Vq2biuD.jpg" width={400} alt="Ellen Beneath P1" />
+                                        <img src="https://i.imgur.com/Vq2biuD.jpg" style={{ maxWidth: '100%' }} alt="Ellen Beneath P1" />
                                     </Grid>
-                                    <Grid item md={6} sm={12}>
+                                    <Grid item pl={2} md={6} sm={12}>
                                         <Typography variant='body'>
 
                                             Beneath WI4 section, Ellen hung out a bit, evaluating whether she could make the lead. I offered to carry her bag up, if she left it on her last screw, and through a few hair raising moments, she crushed it and disappeared into the couloir.
@@ -138,7 +138,7 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} sm={12} md={6}>
-                                        <img src="https://i.imgur.com/bNN4Re7.jpg" width={500} alt="Fork in the Road" />
+                                        <img src="https://i.imgur.com/bNN4Re7.jpg" style={{ maxWidth: '100%' }} alt="Fork in the Road" />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
                                         <Typography variant='body'>
@@ -164,9 +164,9 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} md={5} sm={12}>
-                                        <img src="https://i.imgur.com/xrhtqa7.jpg" width={350} alt="Ellen on Mixed" />
+                                        <img src="https://i.imgur.com/xrhtqa7.jpg" height="400" alt="Ellen on Mixed" />
                                     </Grid>
-                                    <Grid item md={7}>
+                                    <Grid item md={7} sm={12} pl={2}>
                                         <Typography variant='body'>
                                             Still slightly less than sure, I shouted my war cry ("F*** it, we ball!" (inspiring final words right?)), and sent the sequence, landing myself into a comfortable ledge on the arete. Much to my dismay, the climbing appeared to ease up only slightly, and the rock was still almost impossible to protect. Some 10m later, I found a single cam placement beneath an awkward bulge. Uncertain if my hand hold would remain in the wall, but with no other options, I pushed through the move. In doing so, my feet slipped out, and all of my weight went into the possibly loose block. Scrambling to regain my feet, I kicked out the only cam that I had placed - a fall would almost certainly be a deck.
                                             <br />
@@ -185,7 +185,7 @@ const SplitTripReport = () => {
                             </Typography>
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
-                                    <Grid item mr={4} md={6} sm={12}>
+                                    <Grid item pr={4} md={8} sm={12}>
                                         <Typography variant='body'>
                                             When I reached the pin though, I realized two things. First, it was far from bomber. Ellen had been unable to remove it, but it was only halfway buried in the seam, and I was not keen on both of us rapping off it with no back-up. Second, the pin was tucked into a dihedral, with barely enough space for one of us. There was no way we could both hang off it and set up a new rappel.
                                             <br /><br />
@@ -194,8 +194,8 @@ const SplitTripReport = () => {
                                             They say that the greatest alpinists have the shortest memories, and this is a moment that I would do well to expunge from my mind. As I hung there, I wondered if my two pieces would pop out, and I'd be sent cartwheeling to my death. I wondered if Ellen's rappel would pop, and I'd watch her tumble past me, leaving me to freeze to death on the side of a cliff. That kind of thinking is actively detrimental to my chances of survival, but at that point, fatigue had reduced me to a cold meat bag of anxiety, and I had nothing to do but wait. Only by further exposure to those situations can I harden myself against such a mindset.
                                         </Typography>
                                     </Grid>
-                                    <Grid item md={5} sm={12}>
-                                        <img src="https://i.imgur.com/jKrWKOD.jpg" width={300} alt="Sketchy Pieces" />
+                                    <Grid item md={4} sm={12}>
+                                        <img src="https://i.imgur.com/jKrWKOD.jpg" height="350" alt="Sketchy Pieces" />
                                     </Grid>
                                 </Grid>
                             </Container>
