@@ -21,7 +21,7 @@ const WikiPage = ({ articleId }) => {
 
     return (
         <div>
-            <nav aria-label="main mailbox folders">
+            <nav aria-label="main">
                 <List>
                     {WikiTitles && WikiTitles.map((article, index) => {
                         return (

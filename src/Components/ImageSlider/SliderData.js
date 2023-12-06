@@ -1,6 +1,6 @@
 import crestoneBalloon from "../../Common/images/crestone-balloon.jpg";
 import crestonePerspective from "../../Common/images/crestone-perspective.jpg";
-import kcGroup from "../../Common/images/kc_group.jpg";
+import sunlight from "../../Common/images/sunlightridge.jpg";
 import langelyCliff from "../../Common/images/langely-cliff.jpg";
 import noHands from "../../Common/images/lb-no-hands.jpg";
 import lbEpic from "../../Common/images/littlebear-epic.jpg";
@@ -20,7 +20,7 @@ export const SliderData = [
         image: crestonePerspective
     },
     {
-        image: kcGroup
+        image: sunlight
     },
     {
         image: langelyCliff

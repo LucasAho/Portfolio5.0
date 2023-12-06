@@ -14,7 +14,7 @@ const SneffelsTripReport = () => {
                     <Container>
                         <Grid container maxWidth='xl' px='auto' mx='auto'>
                             <Grid item md={8}>
-                                <Typography variant='h3'>Sneffels's North Buttress"</Typography>
+                                <Typography variant='h3'>Sneffels's North Buttress</Typography>
                                 <Typography variant='subtitle1'>My first attempt of Sneffels's North Buttress, my would-be 14er finisher.</Typography>
                                 <Typography mr={3} align='left' variant='caption'>Climbed September 17th, 2023</Typography>
                             </Grid>

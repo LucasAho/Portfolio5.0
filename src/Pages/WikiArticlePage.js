@@ -26,7 +26,7 @@ const WikiArticlePage = () => {
                 .catch(err => console.log(err));
         }
     }, [articleId]);
-    console.log(articleDetails)
+    //console.log(articleDetails)
     return (
         <div>
             <AppBar currentPage='Wiki' />

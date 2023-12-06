@@ -17,9 +17,10 @@ const CustomAppBar = (props) => {
                 </Grid>
                 <Grid item xs={6} direction='row' my='auto' className='nav-links'>
                     <Container className='nav-links'>
-                        <Link to='/' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Portfolio</Link>
+                        <Link to='/' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Home</Link>
                         <Link to='/wiki' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Wiki</Link>
                         <Link to='/blog' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Blog</Link>
+                        <Link to='/tripreports' style={{ color: '#FFF', textDecoration: "none", margin: '0px 1rem' }}>Trip Reports</Link>
                     </Container>
                 </Grid>
             </Grid>
