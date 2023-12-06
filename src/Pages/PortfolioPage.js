@@ -97,8 +97,29 @@ const PortfolioPage = () => {
                         <Typography pt={1} variant='h4' align='center'>Trip Reports</Typography>
                         <Typography pb={1} variant='body1' align='center'>Detailed summaries of my mountaineering adventures</Typography>
                     </Grid>
-                    <Grid item md={6}>
-
+                </Grid>
+                <Grid container>
+                    <Grid item md={6} pr={1}>
+                        <Card>
+                            <CardActionArea component={RouterLink} to={'/tripreport/Split112023'}>
+                                <CardMedia
+                                    component="img"
+                                    height="420"
+                                    alt="Trip Report"
+                                    image='https://i.imgur.com/Jah7m7V.jpg'
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Split Couloir
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        Attempting a classic
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+                    <Grid item md={6} pl={1}>
                         <Card>
                             <CardActionArea component={RouterLink} to={'/tripreport/Sneffels092023'}>
                                 <CardMedia
@@ -118,6 +139,7 @@ const PortfolioPage = () => {
                             </CardActionArea>
                         </Card>
                     </Grid>
+
                 </Grid>
             </Container >
             <Container maxWidth='xl' my={1} className="colored-section">

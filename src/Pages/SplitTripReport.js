@@ -19,7 +19,7 @@ const SplitTripReport = () => {
                                 <Typography mr={3} align='left' variant='caption'>Climbed November 25th, 2023</Typography>
                             </Grid>
                             <Grid item md={6} sm={12}>
-                                <img src="https://i.imgur.com/Jah7m7V.jpg" width={400} alt="Split's East Face" />
+                                <img src="https://i.imgur.com/Jah7m7V.jpg" style={{ maxWidth: '100%' }} alt="Split's East Face" />
                             </Grid>
                         </Grid>
                     </Container>
@@ -164,7 +164,7 @@ const SplitTripReport = () => {
                             <Container style={{ marginTop: "1rem", padding: 0 }}>
                                 <Grid container maxWidth='xl' px='auto' mx='auto'>
                                     <Grid item mt={1} md={5} sm={12}>
-                                        <img src="https://i.imgur.com/xrhtqa7.jpg" height="400" alt="Ellen on Mixed" />
+                                        <img src="https://i.imgur.com/xrhtqa7.jpg" height="350" alt="Ellen on Mixed" />
                                     </Grid>
                                     <Grid item md={7} sm={12} pl={2}>
                                         <Typography variant='body'>
