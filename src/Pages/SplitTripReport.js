@@ -19,7 +19,7 @@ const SplitTripReport = () => {
                                 <Typography mr={3} align='left' variant='caption'>Climbed November 25th, 2023</Typography>
                             </Grid>
                             <Grid item md={6} sm={12}>
-                                <img src="https://i.imgur.com/Jah7m7V.jpg" width={400} sm={width = 200} alt="Split's East Face" />
+                                <img src="https://i.imgur.com/Jah7m7V.jpg" max-width={400} alt="Split's East Face" />
                             </Grid>
                         </Grid>
                     </Container>
